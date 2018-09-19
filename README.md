@@ -1,11 +1,11 @@
 # installing-jdk-maven-in-centos
 
-jdk1.8.0_181
 
 
-cp -rp jdk1.8.0_181/ /opt
+tar xvf jdk1.8.0_181.tar.gz
+sudo cp -rp jdk1.8.0_181/ /opt // should be done user mode
 
-alternatives --install /usr/bin/jar jar /opt/jdk1.8.0_181/bin/jar 1
+alternatives --install /usr/bin/jar jar /opt/jdk1.8.0_181/bin/jar 1 //ssshould ne done in root
 alternatives --install /usr/bin/javac javac /opt/jdk1.8.0_181/bin/javac 1
 alternatives --set jar /opt/jdk1.8.0_181/bin/jar
 alternatives --set javac /opt/jdk1.8.0_181/bin/javac
@@ -24,12 +24,12 @@ cd /usr/local/src
 wget 
 http://mirrors.fibergrid.in/apache/maven/maven-3/3.5.4/binaries/apache-maven-3.5.4-bin.tar.gz
 
-tar -xf apache-maven-3.5.2-bin.tar.gz
+tar xvf apache-maven-3.5.4-bin.tar.gz
 
-rm -f apache-maven-3.5.2-bin.tar.gz
+rm -f apache-maven-3.5.4-bin.tar.gz
 
 
-mv apache-maven-3.5.2/ apache-maven/
+mv apache-maven-3.5.4/ apache-maven/
 
 
 cd /etc/profile.d/
