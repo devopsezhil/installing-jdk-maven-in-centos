@@ -51,3 +51,9 @@ source /etc/profile.d/maven.sh
 
 
 mvn --version
+
+to learn maven :-
+http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
+
+to learn installing henkins 
+https://www.digitalocean.com/community/tutorials/how-to-set-up-jenkins-for-continuous-development-integration-on-centos-7
